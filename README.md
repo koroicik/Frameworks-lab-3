@@ -1,65 +1,70 @@
-1. Что представляет собой NodeJS и для чего используется?
-Node.js — это среда выполнения JavaScript, построенная на движке V8, который разрабатывается Google для браузера Chrome. Особенностью Node.js является возможность выполнять код JavaScript на сервере, а не только в браузере. Это позволяет использовать JavaScript для создания серверных приложений и выполнять код на стороне сервера.
+# Getting Started with Create React App
 
-В основном Node.js используется для создания масштабируемых сетевых приложений, таких как веб-серверы. Он подходит для создания различных приложений, включая веб-сайты, веб-приложения, API, микросервисы и многое другое. Node.js обеспечивает высокую производительность благодаря асинхронной модели ввода-вывода (I/O), которая позволяет обрабатывать множество одновременных соединений без блокировки потока исполнения.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Одной из ключевых особенностей Node.js является использование событий и обратных вызовов, что делает его особенно эффективным при работе с большими объемами данных в режиме реального времени.
+## Available Scripts
 
-2. Что представляет собой Webpack и чем от отличается от Vite?
-Webpack и Vite — это инструменты для сборки (bundling) JavaScript-приложений, но они имеют различные подходы и фокусы.
+In the project directory, you can run:
 
-Webpack:
-Webpack — это мощный инструмент для сборки приложений, который позволяет объединять и управлять различными ресурсами в вашем проекте, такими как JavaScript, стили, изображения и другие файлы. Он также поддерживает множество плагинов и загрузчиков, что делает его гибким и расширяемым.
+### `npm start`
 
-Webpack широко используется в проектах любого размера, предоставляя много возможностей для настройки среды сборки. Он может быть использован для разработки как больших монолитных приложений, так и более мелких проектов.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Vite:
-Vite (произносится как "вита") — это инструмент для разработки, оптимизированный для создания современных веб-приложений. Основной его особенностью является быстрая скорость разработки благодаря использованию современных возможностей браузера при запуске в режиме разработки.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Vite использует современные браузерные API, такие как ESM (ECMAScript Modules), для обеспечения быстрой загрузки модулей в браузере. Это позволяет избежать длительного времени компиляции при разработке. В режиме разработки Vite предоставляет быстрый хот-релоад, что ускоряет процесс разработки.
+### `npm test`
 
-В общем, хотя оба инструмента могут использоваться для сборки JavaScript-приложений, Webpack является более общим инструментом, в то время как Vite ориентирован на быструю разработку современных веб-приложений.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3. Что такое маршрутизация (routing) в веб-разработке?
-Маршрутизация (routing) в веб-разработке относится к процессу определения того, как приложение должно реагировать на запросы пользователя к разным URL-адресам. Когда пользователь взаимодействует с веб-приложением, например, переходит по ссылкам или вводит URL в адресной строке браузера, маршрутизация определяет, какой компонент, страница или контроллер приложения должен быть отображен.
+### `npm run build`
 
-Основные принципы маршрутизации включают в себя:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Маршруты: Определение связи между URL-адресами и компонентами приложения. Каждый маршрут связывается с определенным компонентом, который будет отображен при переходе по этому маршруту.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Навигация: Предоставление средств для перемещения между различными маршрутами. Это может включать в себя переходы по ссылкам, программное изменение URL или использование кнопок "назад" и "вперед" в браузере.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Параметры маршрута: Возможность передачи параметров в URL для динамического определения содержимого. Например, в URL может быть указан идентификатор пользователя, который приложение использует для загрузки соответствующих данных.
+### `npm run eject`
 
-Маршрутизация является важной частью многих веб-приложений, особенно тех, которые построены с использованием современных фреймворков для одностраничных приложений (SPA), таких как React, Angular, или Vue.js. В этих фреймворках обычно реализована клиентская маршрутизация, что позволяет обновлять содержимое страницы без полной перезагрузки. На сервере также может быть настроена серверная маршрутизация для обработки запросов на стороне сервера.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-4. Как работает виртуальный DOM в библиотеках и фреймворках, таких как React и Vue?
-Виртуальный DOM (Document Object Model) - это концепция, используемая в библиотеках и фреймворках, таких как React и Vue, для улучшения производительности при обновлении пользовательского интерфейса.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Вот общий сценарий того, как работает виртуальный DOM:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Исходное дерево DOM:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Приложение создает исходное дерево DOM, представляющее текущее состояние интерфейса.
-Виртуальный DOM:
+## Learn More
 
-Создается виртуальное представление этого дерева DOM в виде объекта в памяти. Этот объект содержит те же элементы и их свойства, что и реальное дерево DOM, но это не связано с браузерным DOM напрямую.
-Изменения состояния:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Когда состояние приложения изменяется (например, из-за пользовательского ввода или других событий), библиотека или фреймворк создает новое виртуальное дерево DOM, представляющее обновленное состояние.
-Сравнение виртуальных деревьев:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Сравнение выполняется между новым виртуальным деревом DOM и предыдущим виртуальным деревом DOM. Это сравнение определяет, какие части дерева были изменены, добавлены или удалены.
-Различия в виртуальном DOM:
+### Code Splitting
 
-Исходя из различий между новым и предыдущим виртуальными деревьями, определяются минимальные изменения, необходимые для обновления реального DOM.
-Пакет изменений в реальный DOM:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Фреймворк создает минимальный пакет изменений, который затем применяется к реальному DOM, чтобы обновить интерфейс.
-Эффективное обновление:
+### Analyzing the Bundle Size
 
-Таким образом, фактическое взаимодействие с браузерным DOM минимизируется, что приводит к улучшению производительности, особенно при интенсивных операциях обновления интерфейса.
-Использование виртуального DOM помогает избежать непосредственных манипуляций с реальным DOM при каждом изменении состояния, что может быть затратным с точки зрения производительности. Это особенно важно в современных веб-приложениях, где пользователь может взаимодействовать с интерфейсом часто и быстро.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
